@@ -1,0 +1,10 @@
+.purpose-tile-column {
+  .tile {
+    background: repeating-linear-gradient(135deg, whitesmoke 40%, white 60%),
+      repeating-linear-gradient(45deg, whitesmoke 40%, white 60%);
+    background-size: 12px 18px;
+    outline: none;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}

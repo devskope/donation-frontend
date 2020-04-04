@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
+import Home from "../views/home/index";
 
 const RouteWithSubRoutes = route => (
   <Route
@@ -27,5 +28,5 @@ export const RenderRoutes = ({ routes }) => (
 );
 
 export const routes = [
-  { path: '/', key: 'home', component: () => <h1 style={{ paddingTop: '9rem' }}>HOME</h1>, exact: true },
+  { path: '/', key: 'home', component: Home, exact: true },
 ];
