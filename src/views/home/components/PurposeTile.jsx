@@ -14,7 +14,7 @@ const PurposeTile = ({ purpose }) => {
       <Link
         to={{
           pathname: '/donate',
-          purpose
+          state: { purpose }
         }}
       >
         <Segment className='tile' padded='very'>
