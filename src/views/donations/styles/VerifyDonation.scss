@@ -1,0 +1,11 @@
+.ui.confirmation {
+  height: 100%;
+  padding-top: 6rem;
+
+  .segment {
+    background: repeating-linear-gradient(135deg, whitesmoke 40%, white 60%),
+      repeating-linear-gradient(45deg, whitesmoke 40%, white 60%);
+    margin-top: -10rem;
+    max-width: 600px;
+  }
+}

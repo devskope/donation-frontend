@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 
 import Home from "../views/home/index";
 import CreateDonation from "../views/donations/CreateDonation";
+import VerifyDonation from "../views/donations/VerifyDonation";
 
 const RouteWithSubRoutes = route => (
   <Route
@@ -41,7 +42,14 @@ export const routes = [
         key: 'createDonation',
         component: CreateDonation,
         exact: true,
+      },
+      {
+        path: '/donate/verify',
+        key: 'verifyDonation',
+        component: VerifyDonation,
+        exact: true,
       }
+
     ]
   }
 ];
