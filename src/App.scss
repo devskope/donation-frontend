@@ -12,6 +12,13 @@
     top: 0;
     left: 0;
     z-index: 5;
+
+    .icon {
+      cursor: pointer;
+      position: absolute;
+      left: 7%;
+      top: 35%;
+    }
   }
 
   @media (prefers-reduced-motion: no-preference) {
