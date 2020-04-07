@@ -15,6 +15,19 @@ export const createTransaction = async payload => {
   return response;
 };
 
+export const verifyTransaction = async reference => {
+  const response = { data: null, error: null };
+
+  try {
+    const { data } = await apiPost('/verifyTx', { reference });
+    response.data = data;
+  } catch (error) {
+    response.error = await handleApiError(error);
+  }
+
+  return response;
+};
+
 const handleApiError = async error => {
   if (error.message.includes('Incorrect statusCode:')) {
     return JSON.parse(new TextDecoder().decode(await error.responseBody)).error;
