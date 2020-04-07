@@ -235,9 +235,9 @@ DonationForm.defaultProps = {
 };
 
 DonationForm.propTypes = {
-  purpose: PropTypes.string.isRequired,
   loading: PropTypes.bool.isRequired,
-  onSubmit: PropTypes.func.isRequired
+  purpose: PropTypes.string.isRequired,
+  submit: PropTypes.func.isRequired
 };
 
 export default DonationForm;
